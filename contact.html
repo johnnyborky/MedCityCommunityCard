@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MedCity Community Card</title>
+  <meta
+    name="description"
+    content="Contact MedCity Community Card to ask about local advertising, category availability, or general questions."
+  />
+  <meta
+    name="keywords"
+    content="contact MedCity Community Card, Rochester MN advertising contact, local advertising Rochester Minnesota, MedCity Community Card email, Rochester business mailer contact"
+  />
+  <meta name="author" content="MedCity Community Card" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://medcitycommunitycard.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact | MedCity Community Card" />
+  <meta
+    property="og:description"
+    content="Get in touch with MedCity Community Card about category availability, local advertising, and business inquiries in Rochester, Minnesota."
+  />
+  <meta property="og:url" content="https://medcitycommunitycard.com/contact.html" />
+  <meta property="og:image" content="https://medcitycommunitycard.com/Images/Logo.png" />
+  <meta property="og:site_name" content="MedCity Community Card" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | MedCity Community Card" />
+  <meta
+    name="twitter:description"
+    content="Get in touch with MedCity Community Card about category availability, local advertising, and business inquiries in Rochester, Minnesota."
+  />
+  <meta name="twitter:image" content="https://medcitycommunitycard.com/Images/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MedCity Community Card home">
+        <img src="Images/Logo.png" alt="MedCity Community Card logo" class="brand-logo" />
+        <span class="brand-text">MedCity Community Card</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="advertisers.html" class="nav-link">For Businesses</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Contact MedCity Community Card</span>
+          <h1>Questions, category availability, or advertising interest?</h1>
+          <p class="hero-text">
+            Reach out to learn more about the card, ask about the next issue, or start the process of
+            reserving a category-exclusive placement.
+          </p>
+
+          <div class="contact-detail-list">
+            <a class="contact-detail-card" href="mailto:MedCityCommunityCard@gmail.com">
+              <span class="contact-label">Email</span>
+              <strong>MedCityCommunityCard@gmail.com</strong>
+            </a>
+
+            <a class="contact-detail-card" href="tel:5079999999">
+              <span class="contact-label">Phone</span>
+              <strong>507-999-9999</strong>
+            </a>
+
+            <div class="contact-detail-card">
+              <span class="contact-label">Service Area</span>
+              <strong>Rochester, Minnesota</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container contact-grid">
+        <div class="contact-form-wrapper">
+          <div class="section-heading left-aligned">
+            <span class="eyebrow">Send a Message</span>
+            <h2>Contact form</h2>
+            <p>
+              Fill out the form below. Once you add your Web3Forms access key, submissions will route to
+              your configured email inbox.
+            </p>
+          </div>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New MedCity Community Card Website Inquiry" />
+            <input type="hidden" name="from_name" value="MedCity Community Card Website" />
+            <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" />
+
+            <div class="form-row">
+              <label class="form-field">
+                <span>Name *</span>
+                <input type="text" name="name" required />
+              </label>
+
+              <label class="form-field">
+                <span>Email *</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label class="form-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" />
+              </label>
+
+              <label class="form-field">
+                <span>Business Name</span>
+                <input type="text" name="business_name" />
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span>Message *</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Send Message</button>
+              <p class="form-note">
+                Replace <code>YOUR_WEB3FORMS_ACCESS_KEY</code> in the HTML before going live.
+              </p>
+            </div>
+
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="contact-sidebar">
+          <div class="sidebar-card">
+            <span class="eyebrow">Good reasons to reach out</span>
+            <ul class="feature-list">
+              <li>Check whether your category is available</li>
+              <li>Ask about multiple ad spaces</li>
+              <li>Confirm pricing and timing</li>
+              <li>Ask what creative assets are needed</li>
+              <li>Get started with the next issue</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <span class="eyebrow">Direct Contact</span>
+            <p><strong>Email:</strong> <a href="mailto:MedCityCommunityCard@gmail.com">MedCityCommunityCard@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:5079999999">507-999-9999</a></p>
+            <p><strong>Location:</strong> Rochester, Minnesota</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MedCity Community Card</h3>
+        <p>Helping Rochester businesses and households connect through monthly local offers.</p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="advertisers.html">For Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:MedCityCommunityCard@gmail.com">MedCityCommunityCard@gmail.com</a></li>
+          <li><a href="tel:5079999999">507-999-9999</a></li>
+          <li>Rochester, Minnesota</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

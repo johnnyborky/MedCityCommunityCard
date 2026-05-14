@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedCity Community Card | Rochester, MN Local Offers</title>
+  <meta
+    name="description"
+    content="Discover the MedCity Community Card, a monthly digital community card featuring Rochester, Minnesota local offers, coupons, and promotions."
+  />
+  <meta
+    name="keywords"
+    content="Rochester MN coupons, Rochester Minnesota local offers, community card, local advertising Rochester MN, MedCity Community Card, Rochester businesses"
+  />
+  <meta name="author" content="MedCity Community Card" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://medcitycommunitycard.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MedCity Community Card | Rochester, MN Local Offers" />
+  <meta
+    property="og:description"
+    content="Browse local Rochester, Minnesota offers, coupons, and promotions on the MedCity Community Card."
+  />
+  <meta property="og:url" content="https://medcitycommunitycard.com/" />
+  <meta property="og:image" content="https://medcitycommunitycard.com/Images/Logo.png" />
+  <meta property="og:site_name" content="MedCity Community Card" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MedCity Community Card | Rochester, MN Local Offers" />
+  <meta
+    name="twitter:description"
+    content="Browse local Rochester, Minnesota offers, coupons, and promotions on the MedCity Community Card."
+  />
+  <meta name="twitter:image" content="https://medcitycommunitycard.com/Images/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MedCity Community Card home">
+        <img src="Images/Logo.png" alt="MedCity Community Card logo" class="brand-logo" />
+        <span class="brand-text">MedCity Community Card</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="advertisers.html" class="nav-link">For Businesses</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Rochester, Minnesota</span>
+          <h1>Local offers from businesses in your community — updated monthly.</h1>
+          <p class="hero-text">
+            The MedCity Community Card brings together Rochester businesses on one premium monthly card.
+            Check back each month for updated coupons, promotions, and local offers.
+          </p>
+
+          <div class="hero-badges">
+            <span class="badge">May 2026 Edition</span>
+            <span class="badge badge-alt">Local businesses only</span>
+            <span class="badge badge-alt">Updated monthly</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#current-card">View This Month’s Card</a>
+            <a class="button button-secondary" href="advertisers.html">Own a Local Business?</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>Premium local deals in one place</li>
+            <li>Designed for Rochester-area households</li>
+            <li>New featured promotions every month</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel card-summary-panel">
+          <p class="panel-label">Why people come back</p>
+          <h2>One card. New reasons to check in every month.</h2>
+          <p>
+            Browse this month’s front and back, then scroll for featured offers pulled from the current
+            card. Save the page and revisit monthly for updated local deals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-card" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Digital Community Card</span>
+          <h2>Explore the current MedCity Community Card</h2>
+          <p>
+            Flip between the front and back of the current issue. This digital version helps you quickly
+            revisit offers after the card arrives in the mail.
+          </p>
+        </div>
+
+        <div class="card-viewer">
+          <div class="card-viewer-toolbar">
+            <div class="toolbar-group" role="tablist" aria-label="Card sides">
+              <button class="button button-chip is-selected card-side-button" type="button" data-side="front" role="tab" aria-selected="true">
+                Front
+              </button>
+              <button class="button button-chip card-side-button" type="button" data-side="back" role="tab" aria-selected="false">
+                Back
+              </button>
+            </div>
+
+            <button id="flip-card-button" class="button button-secondary" type="button" aria-pressed="false">
+              Flip Card
+            </button>
+          </div>
+
+          <div class="card-stage">
+            <div class="community-card" id="community-card" data-side="front" aria-live="polite">
+              <div class="community-card-face community-card-front">
+                <img
+                  src="Images/Community_Card_Front.png"
+                  alt="Front side of the current MedCity Community Card"
+                  loading="eager"
+                />
+              </div>
+              <div class="community-card-face community-card-back">
+                <img
+                  src="Images/Community_Card_Back.png"
+                  alt="Back side of the current MedCity Community Card"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p class="viewer-note">
+            Tip: Use the Front and Back buttons or the Flip Card button to switch views.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">This Month’s Offers</span>
+          <h2>All 16 business offers from the digital card</h2>
+          <p>
+            Browse the complete list of offers included on the current digital card. This section is meant
+            to mirror the full set of participating businesses shown across the front and back.
+          </p>
+        </div>
+
+        <div id="featured-offers" class="offers-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container info-grid">
+        <div class="info-card">
+          <span class="eyebrow">Why it matters</span>
+          <h3>Easy to revisit local promotions</h3>
+          <p>
+            Mail is easy to misplace. The digital version gives households a simple way to find current
+            promotions again whenever they are ready to book, call, or visit.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <span class="eyebrow">Built for local discovery</span>
+          <h3>One place to browse Rochester businesses</h3>
+          <p>
+            From restaurants and wellness to home services and retail, the MedCity Community Card helps
+            people find businesses serving the Rochester community.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <span class="eyebrow">Fresh each month</span>
+          <h3>Check back for new coupons and seasonal offers</h3>
+          <p>
+            The card is designed to change month to month, giving households a reason to return and see
+            what’s new.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-panel">
+        <div>
+          <span class="eyebrow">For Rochester Businesses</span>
+          <h2>Want your business featured on the next card?</h2>
+          <p>
+            Reach premium Rochester households, reserve a category-exclusive placement, and get included in
+            both the printed and digital edition.
+          </p>
+        </div>
+
+        <div class="cta-actions">
+          <a class="button button-primary" href="advertisers.html">See Business Benefits</a>
+          <a class="button button-secondary" href="contact.html">Contact MedCity Community Card</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MedCity Community Card</h3>
+        <p>Monthly local offers, promotions, and community visibility for Rochester, MN.</p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="advertisers.html">For Businesses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:MedCityCommunityCard@gmail.com">MedCityCommunityCard@gmail.com</a></li>
+          <li><a href="tel:5079999999">507-999-9999</a></li>
+          <li>Rochester, Minnesota</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
