@@ -211,7 +211,7 @@ function initializeContactForm() {
 
       if (response.ok && result.success) {
         form.reset();
-        status.textContent = "Message sent successfully. MedCity Community Card will be in touch soon.";
+        status.textContent = "Email sent successfully. MedCity Community Card will be in touch soon.";
         status.classList.add("is-success");
       } else {
         status.textContent = "Unable to send the message right now. Please try again or email directly.";
